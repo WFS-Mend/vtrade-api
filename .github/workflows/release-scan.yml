@@ -6,8 +6,8 @@ on:
     - '**release**'
 
 jobs:
-  call-java-prioritize:
+  call-gradle-prioritize:
     uses: WFS-Mend/whitesource-config/.github/workflows/gradle_prioritize.yml@main
     with:
-      gradle-cmd: 'gradle publish'
+      gradle-cmd: './gradlew build publish'
     secrets: inherit
