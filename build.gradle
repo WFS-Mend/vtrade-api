@@ -17,6 +17,9 @@ dependencies {
 		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
 	}
 	implementation 'org.springframework.boot:spring-boot-starter-log4j2:2.6.1'
+	// https://mvnrepository.com/artifact/com.torodb.engine.mongodb/mongodb-core
+	implementation group: 'com.torodb.engine.mongodb', name: 'mongodb-core', version: '0.50.3'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
