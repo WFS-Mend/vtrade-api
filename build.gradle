@@ -17,6 +17,8 @@ dependencies {
 		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
 	}
 	implementation 'org.springframework.boot:spring-boot-starter-log4j2:2.6.1'
+	// https://mvnrepository.com/artifact/org.jboss.spec.javax.websocket/jboss-websocket-api_1.1_spec
+	implementation group: 'org.jboss.spec.javax.websocket', name: 'jboss-websocket-api_1.1_spec', version: '1.1.1.Final'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
